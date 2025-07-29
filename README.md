@@ -1,12 +1,12 @@
 # Lynx-Ai
 
 ---------
-<img src="https://www.meme-arsenal.com/memes/528d774a8420092c41f6d5ed35928459.jpg" alt="Lynx Logo"> 
+<img src="https://www.meme-arsenal.com/memes/528d774a8420092c41f6d5ed35928459.jpg" alt="Lynx Logo">
 
 ---------
 
 #### **🪄 `Instalación manual por termux`**
-> copie y peguen en termux uno por uno 
+> copie y peguen en termux uno por uno
 ```bash
 termux-setup-storage
 ```
@@ -16,7 +16,7 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-git clone https://github.com/fartovii2311/144
+git clone https://github.com/termvsrobo/144
 ```
 
 ```bash
@@ -24,11 +24,7 @@ cd 144
 ```
 
 ```bash
-yarn install && npm install
-```
-
-```bash
-npm start
+./install.sh
 ```
 
 > **`⛄ Versión Actual: 2.0.0`**
@@ -37,7 +33,7 @@ npm start
 
 ## <img src="https://i.pinimg.com/originals/73/69/6e/73696e022df7cd5cb3d999c6875361dd.gif" alt="Características" width="42" height="42"> Características
 
-> Bot en creación pronto se agregaran más cosas 
+> Bot en creación pronto se agregaran más cosas
 
 - [x] Interacción con voz y texto
 - [x] Configuración de grupo
@@ -55,7 +51,7 @@ npm start
 ### **`🔗 OBTEN LOS ENLACES`**
 
 <summary>
-  
+
 | APP | TIPO | ENLACE |
 |------|-------------|-------|
 | WhatsApp | 𝒞𝒶𝓃𝒶𝓁 𝒪𝒻𝒾𝒸𝒾𝒶𝓁 | [¡Click aquí!]() |
