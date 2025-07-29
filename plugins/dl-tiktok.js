@@ -1,5 +1,5 @@
 import axios from "axios";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   if (!text) {
@@ -10,14 +10,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     await m.react('🕒');
 
     const videoResult = await ttsave.video(text);
-    const { 
-      type, 
-      nickname, 
-      username, 
-      description, 
-      videoInfo, 
-      slides, 
-      audioUrl 
+    const {
+      type,
+      nickname,
+      username,
+      description,
+      videoInfo,
+      slides,
+      audioUrl
     } = videoResult;
 
     let message = `*✔️ Downloader tiktok.*
@@ -35,7 +35,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
         await m.react('✅');
         await conn.sendFile(m.chat, slide.url, `presentación-${slide.number}.jpg`, "", m);
       }
-    } 
+    }
     else if (type === "video") {
       message += "\n> • *Tipo*: Video";
 

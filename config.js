@@ -1,8 +1,8 @@
-import { watchFile, unwatchFile } from 'fs' 
+import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
-import cheerio from 'cheerio'
+import * as cheerio from "cheerio";
 import fetch from 'node-fetch'
 import axios from 'axios'
 import moment from 'moment-timezone'
@@ -22,7 +22,7 @@ global.prems = []
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packsticker = `【 ✫ 𝚃𝙴𝙰𝙼  乂 𝙳𝙰𝚁𝙺 - 𝙾𝙵𝙸𝙲𝙸𝙰𝙻 ✫ 】` //stiker
-global.author = '➼ 𝑳𝒚𝒏𝒙 - 𝑪𝒉𝒂𝒏𝒏𝒆𝒍' //rcanal 
+global.author = '➼ 𝑳𝒚𝒏𝒙 - 𝑪𝒉𝒂𝒏𝒏𝒆𝒍' //rcanal
 global.packname = '【 ✫ 𝚃𝙴𝙰𝙼  乂 𝙳𝙰𝚁𝙺 ✫ 】' //stiker
 global.redes = ''
 
@@ -53,8 +53,8 @@ global.icons = fs.readFileSync('./storage/img/Screenshot_20250120-024123-316.png
 global.group = ''
 global.group2 = ''
 global.canal = 'https://whatsapp.com/channel/0029Vaxb5xr7z4koGtOAAc1Q'
-global.github = '' 
-global.instagram = '' 
+global.github = ''
+global.instagram = ''
 global.whatsApp = ''
 
 
@@ -73,27 +73,27 @@ global.rcanal = {
   },
  }
 
-global.menu = { 
-  contextInfo: { 
-    isForwarded: true, 
-    forwardedNewsletterMessageInfo: { 
-      newsletterJid: "120363371366801178@newsletter", 
-      serverMessageId: 100, 
-      newsletterName: 'Lyᥒ᥊ ᥴһᥲᥒᥒᥱᥣ', 
-    }, 
-    externalAdReply: { 
-      showAdAttribution: true, 
+global.menu = {
+  contextInfo: {
+    isForwarded: true,
+    forwardedNewsletterMessageInfo: {
+      newsletterJid: "120363371366801178@newsletter",
+      serverMessageId: 100,
+      newsletterName: 'Lyᥒ᥊ ᥴһᥲᥒᥒᥱᥣ',
+    },
+    externalAdReply: {
+      showAdAttribution: true,
       title: textbot,
-      body: '( ´͈ ᵕ `͈ )◞♡ Sɪᴍᴘʟᴇ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ', 
-      mediaUrl: null, 
-      description: null, 
-      previewType: "", 
+      body: '( ´͈ ᵕ `͈ )◞♡ Sɪᴍᴘʟᴇ ʙᴏᴛ ᴡʜᴀᴛsᴀᴘᴘ',
+      mediaUrl: null,
+      description: null,
+      previewType: "",
       thumbnailUrl: "https://i.ibb.co/Y7mhFdf/file.jpg",
       sourceUrl: "https://www.miredsocial.com",
-      mediaType: 1, 
-      renderLargerThumbnail: true 
-    }, 
-  }, 
+      mediaType: 1,
+      renderLargerThumbnail: true
+    },
+  },
 };
 
 global.fake = {
@@ -138,7 +138,7 @@ global.axios = axios
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.multiplier = 69 
+global.multiplier = 69
 global.maxwarn = '2' // máxima advertencias
 global.apis = 'https://deliriussapi-oficial.vercel.app'
 
@@ -150,3 +150,6 @@ watchFile(file, () => {
   console.log(chalk.redBright("Update 'config.js'"))
   import(`${file}?update=${Date.now()}`)
 })
+
+global.baileys = '@whiskeysockets/baileys'
+global.lenguajeGB = es

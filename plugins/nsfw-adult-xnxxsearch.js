@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import cheerio from 'cheerio';
+import * as cheerio from "cheerio";
 
 const handler = async (m, { text, usedPrefix, command, conn, rcanal }) => {
   if (!global.db.data) global.db.data = {};

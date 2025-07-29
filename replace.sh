@@ -1,0 +1,1 @@
+grep -rl node_modules/@bochilteam -e "import cheerio from" | xargs sed -i 's/import cheerio from/import * as cheerio from/g'

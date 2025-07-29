@@ -1,2 +1,2 @@
-# !/bin/bash
-yarn install && npm start
+yarn install && ./replace.sh
+npm start

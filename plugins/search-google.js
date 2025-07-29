@@ -1,11 +1,11 @@
 import axios from 'axios';
-import cheerio from 'cheerio';
+import * as cheerio from "cheerio";
 
 const chromeStoreSearch = async (query) => {
   try {
     const { data } = await axios.get(`https://chromewebstore.google.com/search/${query}`);
     const $ = cheerio.load(data);
-    
+
     const results = [];
 
     $('div.Cb7Kte').each((index, element) => {
@@ -38,7 +38,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
   await m.react('🕓');
   try {
     const results = await chromeStoreSearch(args.join(' '));
-    
+
     if (results.length === 0) {
       return conn.reply(m.chat, 'No se encontraron resultados.', m);
     }
